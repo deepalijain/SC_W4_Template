@@ -2,13 +2,18 @@
 #define OI_H
 
 #include "WPILib.h"
+#include "RobotMap.h"
 
 class OI
 {
 private:
+	Joystick* driveStick;
+	Button* shootBallButton;
+	Button* intakeBallButton;
 
 public:
 	OI();
+	Joystick* getJoystick();
 };
 
 #endif
